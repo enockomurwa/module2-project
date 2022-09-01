@@ -1,3 +1,109 @@
+/* CSS for all */
+*{
+    box-sizing: border-box;
+}
 body{
+    font-family: sans-serif;
+}
+
+.center{
     text-align: center;
+}
+
+.row{
+    width: 100%;
+}
+
+p{
+    border: 2px solid black;
+    margin-right: 10px;
+    padding: 40px 10px 5px 10px;
+    overflow: hidden;
+    height: 150px;
+    background-color: rgb(170, 167, 167);
+}
+
+.chicken{
+    background-color: rgb(189, 126, 136);
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-weight: bold;
+    height: 35px;
+    width: 120px;
+    padding: 10px;
+    text-align: center;
+    
+
+}
+
+.beef{
+    background-color: rgb(179, 58, 58);
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 35px;
+    width: 120px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    
+}
+
+.sushi{
+    background-color: rgb(238, 194, 122);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 120px;
+    height: 35px;
+    padding: 10px;
+    font-weight: bold;
+    
+}
+
+.container{
+    position: relative;
+
+}
+
+/* Media query for large devices */
+
+@media(min-width: 992px){
+    .large{
+        float: left;
+    }
+
+    .large{
+        width: 33.33%;
+    }
+}
+
+/* Media query for medium devices */
+
+@media(min-width: 768px) and (max-width:991px){
+    .medium, .medium-12{
+        float: left;
+    }
+
+    .medium{
+        width: 50%;
+    }
+
+    .medium-12{
+        width: 100%;
+    }
+}
+
+
+/* Media query for small devices */
+
+@media(max-width: 767px){
+    .small{
+        float: left;
+    }
+
+    .small{
+        width: 100%;
+    }
 }
